@@ -9,9 +9,9 @@ Welcome to the MultiLinguAI Github repository! MultiLinguAI is an AI-powered web
 * *Personalized Learning:*  Tailor your learning experience with interactive exercises, quizzes, and vocabulary builders, all designed to reinforce your understanding of the language.
 * *Local Language Support:*  We prioritize providing translations and learning resources in the languages most relevant to your community, making language learning more relevant and enjoyable.
 
-   ### **Key Features of MultiLinguAI**
-**Intuitive Interface**
-1. A clean, modern, and user-friendly design that is easy to navigate, even for beginner language learners.
+### **Key Features of MultiLinguAI**
+*Intuitive Interface*
+ * A clean, modern, and user-friendly design that is easy to navigate, even for beginner language learners.
 Intuitive navigation and clear organization of learning materials to help users quickly find and access the content they need.
 **Interactive Exercise**s
 2. Engaging, interactive exercises and activities that test the user's understanding and help build their vocabulary and language skills.
