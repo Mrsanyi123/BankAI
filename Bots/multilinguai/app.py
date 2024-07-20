@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify
 from langchain.vectorstores.chroma import Chroma
 from langchain.prompts import ChatPromptTemplate
-from langchain_community.llms.ollama import Ollama
+import openai
 from embedding import get_embedding_function
 import logging
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 
@@ -21,6 +23,12 @@ Answer the question based on the above context: {question}
 
 logging.basicConfig(level=logging.INFO)
 
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve the API key from the environment
+openai.api_key = os.getenv('OPENAI_API_KEY')
+
 def query_rag(query_text: str):
     # Prepare the DB
     embedding_function = get_embedding_function()
@@ -34,8 +42,15 @@ def query_rag(query_text: str):
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
     prompt = prompt_template.format(context=context_text, question=query_text)
 
-    model = Ollama(model="mistral")
-    response_text = model.invoke(prompt)
+    # Use OpenAI GPT for response generation
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt}
+        ]
+    )
+    response_text = response['choices'][0]['message']['content']
     logging.info(f"Response: {response_text}")
     return response_text
 
