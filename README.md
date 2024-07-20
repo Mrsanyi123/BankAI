@@ -10,18 +10,18 @@ Welcome to the MultiLinguAI Github repository! MultiLinguAI is an AI-powered web
 * *Local Language Support:*  We prioritize providing translations and learning resources in the languages most relevant to your community, making language learning more relevant and enjoyable.
 
 ### **Key Features of MultiLinguAI**
-*Intuitive Interface*
+***Intuitive Interface***
  * A clean, modern, and user-friendly design that is easy to navigate, even for beginner language learners.
 Intuitive navigation and clear organization of learning materials to help users quickly find and access the content they need.
-**Interactive Exercise**s
-2. Engaging, interactive exercises and activities that test the user's understanding and help build their vocabulary and language skills.
-3. Gamified elements and immediate feedback to make the learning experience more enjoyable and effective.
+**Interactive Exercise**
+ * Engaging, interactive exercises and activities that test the user's understanding and help build their vocabulary and language skills.
+ * Gamified elements and immediate feedback to make the learning experience more enjoyable and effective.
 **Personalized Learning Paths**
-4. Adaptive learning algorithms that analyze user performance and progress to create personalized learning paths.
-5. Users can track their progress, identify their strengths and weaknesses, and focus on areas that require more practice.
+ * Adaptive learning algorithms that analyze user performance and progress to create personalized learning paths.
+ * Users can track their progress, identify their strengths and weaknesses, and focus on areas that require more practice.
 **Multimedia Support**
-6. Audio and video resources to help users improve their pronunciation, listening comprehension, and overall language fluency.
-7. Authentic multimedia content, such as podcasts, videos, and interactive dialogues, to immerse users in real-world language use.
+ * Audio and video resources to help users improve their pronunciation, listening comprehension, and overall language fluency.
+ * Authentic multimedia content, such as podcasts, videos, and interactive dialogues, to immerse users in real-world language use.
 **Collaborative Learning**
-8. Features that enable users to connect with other language learners, form study groups, and engage in peer-to-peer learning.
+ * Features that enable users to connect with other language learners, form study groups, and engage in peer-to-peer learning.
 Opportunities for users to share their progress, ask questions, and receive support from the MultiLinguAI community
