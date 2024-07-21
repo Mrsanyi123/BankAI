@@ -1,0 +1,201 @@
+:root{
+    --primary-acssent-clr-hsl: hsl(0, 78%, 58%);
+    --primary-acssent-clr: var(--primary-acssent-clr-hsl);
+    --secondary-acssent-clr: hsl(221, 83%, 53%);
+    --tritery-background-color: hsl(0, 0%, 98%);
+    --quaternary-background-clr: #FFF2F3;
+    --penta-background-clr: hwb(340 99% 0%);
+    --text-color-1: hsl(228, 28%, 20%);
+    --text-color-2: hsl(0, 0%, 45%);
+    --text-color-3: hsl(0, 0%, 100%);
+
+    --icon-clr: hsl(95, 32%, 61%);
+    --font-family: "Exo", sans-serif;
+
+    --font-bold: 700;
+    --font-regular: 400;
+
+    --font-size-1: 3rem;
+    --font-size-2: 1.3rem;
+    --font-size-3: 1.95rem;
+    --font-size-4: 1rem;
+    --font-size-5: 2.4rem;
+    --font-size-6: .875rem;
+}
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color-2);
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    background: var(--tritery-background-color);
+    color: var(--text-color-2);
+    font-size: var(--font-size-2);
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+.chat-bot{
+    display: grid;
+    place-content: center;
+    position: fixed;
+    bottom: 60px;
+    right: 70px;
+    width: 60px;
+    height: 60px;
+    border-radius: 54% 46% 46% 54% / 47% 48% 52% 53% ;
+    background: var(--text-color-1);
+    color: var(--text-color-3);
+    font-size: var(--font-size-5);
+    cursor: pointer;
+}
+ /* header  part*/
+
+header { 
+    width: 100vw; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    padding: 20px 0; 
+} 
+header nav ul li { 
+    display: inline-block; 
+    margin-left: 20px; 
+} 
+header nav ul li a { 
+    color: var(--text-color-2); 
+    text-decoration: none; 
+    font-size: 16px; 
+    font-weight: var(--font-bold);
+} 
+.buttons{
+    width: 166px;
+    height: 52px;
+    margin-left: 10px; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-size-4);
+    font-weight: var(--font-bold);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.logo img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: .5px solid var(--text-color-2);
+
+}
+
+.registerContact { 
+    margin-left: 10px; 
+    padding: 10px 20px; 
+    background: var(--primary-acssent-clr);
+    border: none;
+    color: var(--text-color-3);
+    transition: ease-in 150ms;
+} 
+.registerContact:hover{
+    background: transparent;
+    outline: .5px solid var(--primary-acssent-clr);
+    color: var(--text-color-1);
+}
+.loginGet-start { 
+    border: none; 
+    border: 1px solid var(--primary-acssent-clr); 
+    background: var(--text-color-3);
+    position: relative;
+    z-index: 99;
+    transition: 200ms;
+} 
+.loginGet-start::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--primary-acssent-clr);
+    width: 0px;
+    height: 52px;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    z-index: -1;
+    transition: 200ms;
+
+}
+.loginGet-start:hover::after{
+    width: 166px;
+    background: var(--primary-acssent-clr);
+}
+.loginGet-start:hover{
+    color: var(--text-color-3);
+}
+.home-section { 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+} 
+
+
+.grid-Box{
+    display: flex; 
+    flex-direction: column;
+}
+.home-main{ 
+    display: flex; 
+    align-items: center;
+} 
+.home-text{
+    width: 45vw;
+}
+.home-text h1{ 
+    font-size: var(--font-size-1); 
+    color: var(--text-color-1);
+} 
+h1 span{
+    color: var(--primary-acssent-clr);
+}
+.home-text p { 
+    font-size: var(--font-size-4); 
+    color: var(--text-color-2); 
+    margin-bottom: 20px; 
+} 
+.home-img { 
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+}
+/* flex boxes */
+
+.service{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 65px;
+    gap: 1rem;
+    border: 8px;
+}
