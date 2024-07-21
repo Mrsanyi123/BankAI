@@ -11,14 +11,17 @@ app = Flask(__name__)
 
 CHROMA_PATH = "chroma"
 
+# Modify the prompt template to remove "based on the provided context"
 PROMPT_TEMPLATE = """
-Answer the question based only on the following context:
+Context:
 
 {context}
 
 ---
 
-Answer the question based on the above context: {question}
+Question: {question}
+
+Answer:
 """
 
 logging.basicConfig(level=logging.INFO)
@@ -37,6 +40,9 @@ def query_rag(query_text: str):
     # Search the DB
     results = db.similarity_search_with_score(query_text, k=1)
     logging.info(f"Results: {results}")
+
+    if not results:
+        return "No relevant information found in the documents."
 
     context_text = "\n\n---\n\n".join([doc.page_content for doc, _score in results])
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
