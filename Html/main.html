@@ -11,12 +11,15 @@
       rel="stylesheet"
     />
     <title>MultiLinguAI - Your education with your own language!</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/Frontend/Css/main.css" />
   </head>
   <body>
     <div class="chat-bot"><i class="fa-solid fa-comment-dots"></i></div>
     <header>
-      <p>MultiLinguAI</p>
+      <div class="logo">
+        <img src="/Frontend/Assets/Logo.png" alt="">
+        <p>MultiLinguAI</p>
+      </div>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -26,8 +29,8 @@
         </ul>
       </nav>
       <div class="header-button">
-        <a href="register.html"><button class="buttons loginGet-start">Login</button></a>
-        <a href="register.html"></a><button class="buttons registerContact">Register &rarr;</button></a>
+        <a href="/Frontend/Html/register.html"><button class="buttons loginGet-start">Login</button></a>
+        <a href="/Frontend/Html/register.html"><button class="buttons registerContact">Register &rarr;</button></a>
       </div>
     </header>
     <section class="home-section">
@@ -43,7 +46,7 @@
               <button class="buttons loginGet-start">Get Started</button>
             </div>
           </div>
-          <img class="home-img" src="main.png" alt="" />
+          <img class="home-img" src="/Frontend/Assets/main.png" alt="" />
         </div>
         <div class="service">
           <div class="flex-box">
@@ -58,7 +61,7 @@
             </div>
           </div>
           <div class="flex-box">
-            <div class="icon"></div>
+            <div class="icon"><i class="fa-solid fa-book"></i></div>
             <h3>Language Learning Support</h3>
             <div class="pSapn">
               <div class="pSpan">
@@ -84,11 +87,8 @@
         </div>
       </div>
     </section>
-    
-
-</section> 
 <section class="about"> 
-    <div class="container about-section" id="about1"> 
+    <div class="about-section first-about" id="about1"> 
         <div class="about-text"> 
             <span class="span"></span>
             <h2>We tear down language barriers, opening up new pathways for students to learn and achieve their best scores</h2> 
@@ -96,12 +96,12 @@
             <a href="#" class="learn-more">Learn More &rarr;</a> 
         </div> 
         <div class="about-image"> 
-            <img src="main.png" alt="Pathway"> 
+            <img src="/Frontend/Assets/about1.jpg" alt="Pathway"> 
         </div> 
     </div> 
-    <div class="container about-section" id="about2"> 
+    <div class="about-section second-about" id="about2"> 
         <div class="about-image"> 
-            <img src="main.png" alt="Quality Translations"> 
+            <img class="" src="/Frontend/Assets/about2.png" alt="Quality Translations"> 
         </div> 
         <div class="about-text"> 
             <span class="span"></span>
@@ -112,18 +112,19 @@
     </div> 
 </section>
 <section class="team">
-    <div class="cards-parent">
+    <p>🚀Our Team</p>
+    <div class="parent-card">
       <div class="cards">
         <div class="card">
-          <img src="1.jpg" alt="">
+          <img src="/Frontend/Assets/1.jpg" alt="">
           <div class="profile">
             <p class="profile-name">Sanyi diriba</p>
             <p class="discription">Student</p>
-            <div class="social-links"><a href="https://github.com/Mrsanyi123"><i class="fa-brands fa-github"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="social-links"><a href="#"><i class="fa-brands fa-github"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
           </div>
         </div>
         <div class="card">
-          <img src="2.jpg" alt="">
+          <img src="/Frontend/Assets/2.jpg" alt="">
           <div class="profile">
             <p class="profile-name">Amani sedrat</p>
             <p class="discription">Student</p>
@@ -131,17 +132,17 @@
           </div>
         </div>
         <div class="card">
-          <img src="3.jpg" alt="">
+          <img src="/Frontend/Assets/3.jpg" alt="">
           <div class="profile">
             <p class="profile-name">Eyu birhanu</p>
             <p class="discription">Student</p>
             <div class="social-links"><a href="#"><i class="fa-brands fa-github"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
           </div>
         </div>
-      </div>
-      <div class="cards">
+      
+      
         <div class="card">
-          <img src="4.jpg" alt="">
+          <img src="/Frontend/Assets/4.jpg" alt="">
           <div class="profile">
             <p class="profile-name">Samuel Diriba</p>
             <p class="discription">Student</p>
@@ -149,16 +150,56 @@
           </div>
         </div>
         <div class="card">
-          <img src="5.jpg" alt="">
+          <img src="/Frontend/Assets/5.jpg" alt="">
           <div class="profile">
-            <p class="profile-name">Kennan Million</p>
+            <p class="profile-name">Kenean Milion</p>
             <p class="discription">Student</p>
             <div class="social-links"><a href="#"><i class="fa-brands fa-github"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
           </div>
         </div>
+        </div>
     </div>
-    </div>
-  </section>
+</section>
+<section class="container"> 
+  <p class="container-title">Break down language barriers. Start translating for free.</p> 
+  <p class="container-discription">Choose the perfect plan for your learning path needs</p> 
   
-  </body>
+  <div class="toggle">
+    <p>Annually</p>
+    <label class="switch">
+      <input type="checkbox" id="toggle-btn" />
+      <span class="slider"></span>
+    </label>
+    <p>Monthly</p>
+  </div> 
+
+
+  <div class="main-card">
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <p class="title basic">Free</p>
+        <p class="pricing basic-pricing">$0</p>
+        <div class="explorer">
+          <p class="p">Translation</p>
+          <p class="p">Text to speech</p>
+          <p class="p"></p>
+        </div>
+        <button class="btn">Get Started</button>
+      </div>
+      <div class="pricing-card">
+        <p class="title master">Custom</p>
+        <p class="pricing master-pricing">$11.99</p>
+        <div class="explorer">
+          <p class="p">All Features in the Free</p>
+          <p class="p">Interactive Language Games</p>
+          <p class="p">Adaptive Language Courses</p>
+          <p class="p">Cultural Context Integration</p>
+        </div>
+        <button class="btn">Get Started</button>
+      </div>
+    </div>
+  </div>
+</section>  
+<script src="/Frontend/Js/main.js"></script>
+</body>
 </html>
